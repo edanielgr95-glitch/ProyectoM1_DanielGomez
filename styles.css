@@ -17,3 +17,43 @@ main{
     margin: 0 auto;
     padding: 0 24px; 
 }
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px;
+}
+.controls h2 {
+    width: 100%;
+    margin: 0;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+select, 
+button{
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+select{
+    border: 1px solid #767676;
+    background: #ffffff;
+    color: #1a1a1a;
+}
+button{
+    border: none;
+    background: #5b21b6;
+    color: #ffffff;
+    cursor: pointer;
+}
+button:hover{
+    background: #4c1d95;
+}
+select:focus-visible,
+button:focus-visible{
+    outline: 3px solid #1a1a1a;
+    outline-offset: 3px;
+}
