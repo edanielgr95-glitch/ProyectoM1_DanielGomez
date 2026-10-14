@@ -44,4 +44,27 @@ function createColor(format) {
         }
         return colors;
     }
-
+function showPalette(colors) {
+    paletteContainer.innerHTML="";
+    for (const color of colors) {
+        const card=document.createElement("article");
+        card.className="card";
+        
+        const swatch=document.createElement("div");
+        swatch.className="swatch";
+        swatch.style.backgroundColor=color.hex;
+    
+    const code=document.createElement("p");
+    code.className="code";
+    code.textContent=color.hex;
+    card.appendChild(swatch);
+    card.appendChild(code);
+    if (color.text!==color.hex) {
+        const original=document.createElement("p");
+        original.className="code";
+        original.textContent=color.text;
+        card.appendChild(original);
+    }
+    paletteContainer.appendChild(card);
+}
+}
