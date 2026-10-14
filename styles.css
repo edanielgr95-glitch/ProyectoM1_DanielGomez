@@ -1,4 +1,4 @@
-{
+*{
     box-sizing: border-box;
 }
 body {
@@ -56,4 +56,25 @@ select:focus-visible,
 button:focus-visible{
     outline: 3px solid #1a1a1a;
     outline-offset: 3px;
+}
+.color-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.card {
+background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+.swatch {
+    height: 120px;
+    background: #cccccc;
+}
+.code {
+    margin:0;
+    padding: 10px 12px;
+    font-family: monospace; 
+    font-size: 16px;
 }
