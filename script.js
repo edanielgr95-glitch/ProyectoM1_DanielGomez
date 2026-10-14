@@ -68,3 +68,15 @@ function showPalette(colors) {
     paletteContainer.appendChild(card);
 }
 }
+function showToast(message) {
+    toast.textContent=message;
+    toast.classList.add("visible");
+    setTimeout(function() {
+        toast.classList.remove("visible");
+    }, 2000);
+}
+generateButton.addEventListener("click", function() {
+    const colors=generatePalette();
+    showPalette(colors);
+    showToast("Paleta de"+colors.length+" colores generada!");
+});
