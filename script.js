@@ -35,3 +35,13 @@ function createColor(format) {
     const hex=randomHex();
     return{ hex:hex, text:hex };
     }
+    function generatePalette() {
+        const amount=Number(sizeSelect.value);
+        const format=formatSelect.value;
+        const colors=[];
+        for (let i=0; i<amount; i++) {
+            colors.push(createColor(format));
+        }
+        return colors;
+    }
+
