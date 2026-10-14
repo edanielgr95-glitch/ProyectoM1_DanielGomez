@@ -78,6 +78,12 @@ background: #ffffff;
     font-family: monospace; 
     font-size: 16px;
 }
+.hsl {
+    margin: 0;
+    padding: 10px 12px;
+    font-family: monospace;
+    font-size: 16px;
+}               
 .toast {
     position: fixed;
     bottom: 24px;

@@ -78,5 +78,5 @@ function showToast(message) {
 generateButton.addEventListener("click", function() {
     const colors=generatePalette();
     showPalette(colors);
-    showToast("Paleta de"+colors.length+" colores generada!");
+    showToast("Paleta de "+colors.length+" colores generada! ");
 });
