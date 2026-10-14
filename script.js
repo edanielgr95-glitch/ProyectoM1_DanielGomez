@@ -22,3 +22,16 @@ function channel(n){
 }
 return("#"+channel(0)+channel(8)+channel(4)).toUpperCase();
 }
+function createColor(format) {
+    if (format==="hsl") {
+        const h=randomNumber(0,359);
+        const s=randomNumber(40,90);
+        const l=randomNumber(35,70);
+        return{ 
+            hex:hslToHex(h,s,l),
+            text:"hsl("+h+", "+s+"%, "+l+"%)"
+        };
+    }
+    const hex=randomHex();
+    return{ hex:hex, text:hex };
+    }
