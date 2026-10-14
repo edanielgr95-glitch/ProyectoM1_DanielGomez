@@ -80,3 +80,4 @@ generateButton.addEventListener("click", function() {
     showPalette(colors);
     showToast("Paleta de "+colors.length+" colores generada! ");
 });
+showPalette(generatePalette());
