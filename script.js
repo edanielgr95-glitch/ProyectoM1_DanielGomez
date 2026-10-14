@@ -11,3 +11,14 @@ function randomNumber(min, max) {
     const number= randomNumber(0, 0xffffff);
     return "#"+number.toString(16).padStart(6, '0'). toUpperCase(); 
 }   
+function hslToHex(h, s, l) {
+    s=s/100;
+    l=l/100;
+    const a=s*Math.min(l,1-l);
+function channel(n){
+    const k=(n+h/30)%12;
+    const value=l-a*Math.max(Math.min(k-3,9-k,1),-1);
+    return Math.round(255*value).toString(16).padStart(2, '0');
+}
+return("#"+channel(0)+channel(8)+channel(4)).toUpperCase();
+}
