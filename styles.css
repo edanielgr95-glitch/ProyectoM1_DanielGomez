@@ -78,3 +78,18 @@ background: #ffffff;
     font-family: monospace; 
     font-size: 16px;
 }
+.toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 12px 20px;
+    background: #1a1a1a;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+.toast.visible {
+    opacity: 1;
+}
