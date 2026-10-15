@@ -65,6 +65,11 @@ function showPalette(colors) {
         original.textContent=color.text;
         card.appendChild(original);
     }
+            card.title = "Clic para copiar " + color.hex;
+        card.addEventListener("click", function () {
+            navigator.clipboard.writeText(color.hex);
+            showToast("Copiado: " + color.hex);
+        });
     paletteContainer.appendChild(card);
 }
 }
