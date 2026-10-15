@@ -67,6 +67,7 @@ background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+        animation: appear 0.4s ease;
 }
 .swatch {
     height: 120px;
@@ -99,4 +100,14 @@ background: #ffffff;
 }
 .toast.visible {
     opacity: 1;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
